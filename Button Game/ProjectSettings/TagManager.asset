@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Citizen
   - citizen_b
+  - TriggerZone
   layers:
   - Default
   - TransparentFX
