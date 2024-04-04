@@ -466,6 +466,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2053653681}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1114599322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114599313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0c9a7044063a44fb85532aabc87bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1114599323
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114599313}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1177077420
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +623,7 @@ GameObject:
   - component: {fileID: 1256489482}
   m_Layer: 0
   m_Name: Trigger
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,8 +669,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256489481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.041108727, y: 1.398, z: 7.486}
-  m_LocalScale: {x: 1.4277, y: 0.46778, z: 1}
+  m_LocalPosition: {x: -0.041108727, y: 1.83, z: 9.45}
+  m_LocalScale: {x: 6.743741, y: 1.9755752, z: 4.5012}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1392,7 +1431,12 @@ PrefabInstance:
     - target: {fileID: 4514599889584505958, guid: bbaa5a17492ccca4884ba6a16b717df7,
         type: 3}
       propertyPath: m_TagString
-      value: citizen_b
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870845412853114796, guid: bbaa5a17492ccca4884ba6a16b717df7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7581543940405896729, guid: bbaa5a17492ccca4884ba6a16b717df7,
         type: 3}
@@ -1415,6 +1459,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1114599314}
+    - targetCorrespondingSourceObject: {fileID: 4514599889584505958, guid: bbaa5a17492ccca4884ba6a16b717df7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1114599322}
+    - targetCorrespondingSourceObject: {fileID: 4514599889584505958, guid: bbaa5a17492ccca4884ba6a16b717df7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1114599323}
   m_SourcePrefab: {fileID: 100100000, guid: bbaa5a17492ccca4884ba6a16b717df7, type: 3}
 --- !u!1 &2110859996
 GameObject:
@@ -1645,7 +1697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6486363687492497087}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01e308f2991b3cb44aeee4acbc88af8a, type: 3}
   m_Name: 
